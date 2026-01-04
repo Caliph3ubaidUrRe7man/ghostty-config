@@ -17,16 +17,22 @@
 
 # Config syntax crash course
 # ==========================
+
+auto-update = download
+auto-update-channel = tip
+
 # # The config file consists of simple key-value pairs,
 # # separated by equals signs.
 font-family = "NoName Fixed Terminal"
 font-size = 15
 font-style = bold
 window-padding-x = 2
+cursor-style = block
+shell-integration-features = no-cursor
 
 # Alternative fallback if the above keys are unsupported:
 # background = "transparent"
-# vibrancy = "light"
+# vibrancy = "dark"
 #
 # # Spacing around the equals sign does not matter.
 # # All of these are identical:
@@ -39,8 +45,8 @@ window-padding-x = 2
 # # a comment after a config option, since it would be interpreted as a
 # # part of the value. For example, this will have a value of "#123abc":
 background = #000000
-foreground = #8000ff
-cursor-color = #010101
+foreground = cyan
+cursor-color = yellow
 selection-background = #d4d4d4
 selection-foreground = #010053
 #
@@ -54,7 +60,15 @@ selection-foreground = #010053
 
 window-padding-x = 12
 window-padding-y = 12
-window-padding-color = "background"
+window-padding-color = "extend"
+window-decoration = true
+window-title-font-family = "Zen Maru Gothic"
+window-titlebar-background = #010101
+window-titlebar-foreground = yellow
 
-background-opacity = 0.5
+background-opacity = 0.75
 background-blur-radius = 50
+
+mouse-hide-while-typing
+
+gtk-titlebar
